@@ -1,0 +1,18 @@
+page-profile {}
+
+.influencer-detail img {
+    max-width: 250px;
+    border-radius: 50%;
+}
+
+.profile-picture {
+    margin: 0 auto;
+    /* Firefox */
+    display: -moz-box;
+    -moz-box-pack: center;
+    -moz-box-align: center;
+    /* Safari and Chrome */
+    display: -webkit-box;
+    -webkit-box-pack: center;
+    -webkit-box-align: center;
+}

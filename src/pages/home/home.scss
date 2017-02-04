@@ -1,0 +1,25 @@
+page-home {}
+
+.title {
+    text-align: center;
+}
+
+.categories {
+    padding: 0px !important;
+}
+
+.image {
+    position: relative;
+    float: left;
+}
+
+.text {
+    color: white;
+    left: 0;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    font-size: 50px;
+    width: 100%;
+    font-weight: bold;
+}
