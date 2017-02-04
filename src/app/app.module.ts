@@ -1,3 +1,4 @@
+import { LoginPage } from './../pages/login/login';
 import { MyJobPage } from './../pages/my-job/my-job';
 import { ChatPage } from './../pages/chat/chat';
 import { ProfilePage } from './../pages/profile/profile';
@@ -10,6 +11,7 @@ import { TabsPage } from '../pages/tabs/tabs';
 @NgModule({
   declarations: [
     MyApp,
+    LoginPage,
     HomePage,
     ProfilePage,
     ChatPage,
@@ -22,6 +24,7 @@ import { TabsPage } from '../pages/tabs/tabs';
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
+    LoginPage,
     HomePage,
     ProfilePage,
     ChatPage,

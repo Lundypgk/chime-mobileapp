@@ -1,0 +1,43 @@
+page-login {}
+
+.login-button {
+    width: 100%;
+}
+
+.background {
+    background: url('./assets/Images/login/background.png')!important;
+}
+
+.chime-logo {
+    margin: 70px auto;
+    /* Firefox */
+    display: -moz-box;
+    -moz-box-pack: center;
+    -moz-box-align: center;
+    /* Safari and Chrome */
+    display: -webkit-box;
+    -webkit-box-pack: center;
+    -webkit-box-align: center;
+}
+
+.chime-word {
+    margin: -60px auto;
+    /* Firefox */
+    display: -moz-box;
+    -moz-box-pack: center;
+    -moz-box-align: center;
+    /* Safari and Chrome */
+    display: -webkit-box;
+    -webkit-box-pack: center;
+    -webkit-box-align: center;
+}
+
+.input {
+    position: relative;
+    top: 20%;
+    margin: 5px 5px 5px 5px;
+}
+
+.login-button {
+    width: 100%;
+}
