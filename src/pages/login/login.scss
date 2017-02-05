@@ -7,6 +7,10 @@ page-login {}
 .background {
     background: url('./assets/Images/login/background.png')!important;
 }
+.login-background
+{
+    height:107%;
+}
 
 .chime-logo {
     margin: 70px auto;
@@ -19,7 +23,16 @@ page-login {}
     -webkit-box-pack: center;
     -webkit-box-align: center;
 }
-
+.button-md {
+    background-color: #FACB1B;
+    color:#000;
+}
+.item-md.item-input.input-has-focus .item-inner,
+.list-ios .item-block .item-inner
+{
+        border-bottom: #FACB1B;
+        box-shadow: inset 0 -1px 0 0 #FACB1B;
+}
 .chime-word {
     margin: -60px auto;
     /* Firefox */
@@ -38,6 +51,25 @@ page-login {}
     margin: 5px 5px 5px 5px;
 }
 
+
+.item-md,
+.item-ios
+{
+       background-color: transparent;
+    color: #fff;
+    width: 80%;
+    margin: auto;
+}
 .login-button {
-    width: 100%;
+    width: 75%;
+    margin: 6% 15%;
+    background-color: #FACB1B;
+    color:#000;
+    text-transform: uppercase;
+    font-weight:bold;
+}
+
+.list-ios > .item-block:first-child
+{
+    border-top:transparent;
 }
