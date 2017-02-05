@@ -6,11 +6,21 @@ page-home {}
 
 .categories {
     padding: 0px !important;
+    margin:0px !important;
 }
-
+.notfirst
+{
+    width: 95%;
+    margin:2% 2.5%;
+}
+.lastone
+{
+    margin-bottom: 2%;
+}
 .image {
     position: relative;
     float: left;
+    margin:0px !important;
 }
 
 .text {
@@ -18,8 +28,20 @@ page-home {}
     left: 0;
     position: absolute;
     text-align: center;
-    top: 50%;
-    font-size: 50px;
+    top: 30%;
+    font-size: 40px;
     width: 100%;
     font-weight: bold;
+}
+.yellow {
+    color:#FACB1B;
+}
+ion-header,
+ion-content
+{
+    margin-top:-5%;
+}
+ion-content
+{
+    height:102%;
 }

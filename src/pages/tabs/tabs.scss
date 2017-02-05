@@ -2,17 +2,26 @@ page-tabs {}
 
 .tabs-ios .tabbar {
     background-color: #000;
+    height:9%;
 }
 
 .tabs-ios .tab-button:hover:not(.disable-hover),
  .tabs-ios .tab-button[aria-selected=true],
 .tabs-ios .tab-button[aria-selected=true] .tab-button-icon
 {
-    color: #FACB1B;
+    color: #fff;
 }
 .tabs-ios .tab-button-icon,
 .tabs-ios .tab-button
 
 {
-    color:#ecebe8;
+    color:#8c8c8c;
+}
+
+.tabs-ios .tab-button-text{
+    //display:none;
+}
+.tabs-ios .tab-button-icon
+{
+    margin-top:0px;
 }
