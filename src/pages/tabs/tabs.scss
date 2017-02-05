@@ -1,18 +1,24 @@
 page-tabs {}
 
-.tabs-ios .tabbar {
+.tabs-ios .tabbar,
+.tabs-md .tabbar
+ {
     background-color: #000;
     height:9%;
 }
 
 .tabs-ios .tab-button:hover:not(.disable-hover),
  .tabs-ios .tab-button[aria-selected=true],
-.tabs-ios .tab-button[aria-selected=true] .tab-button-icon
+.tabs-ios .tab-button[aria-selected=true] .tab-button-icon,
+.tabs-md .tab-button[aria-selected=true] .tab-button-icon,
+.tabs-md .tab-button[aria-selected=true]
 {
     color: #fff;
 }
 .tabs-ios .tab-button-icon,
-.tabs-ios .tab-button
+.tabs-ios .tab-button,
+.tabs-md .tab-button-icon,
+.tabs-md .tab-button
 
 {
     color:#8c8c8c;
