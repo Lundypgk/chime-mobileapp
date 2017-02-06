@@ -40,7 +40,7 @@ ion-header,
 ion-content
 {
     margin-top:-5%;
-  
+    background-color:#181818;
 }
 // .content-ios
 // {
@@ -49,4 +49,23 @@ ion-content
 ion-content
 {
     height:102%;
+}
+.platform-android ion-header,
+.platform-android ion-content
+{
+    margin-top:0%;
+    
+    }	
+
+.platform-android ion-content
+{
+    height:100%;
+    
+}
+ion-header {
+    background-color:#121212;
+}
+.ion-page > ion-content
+{
+    background-color: #181818;
 }
