@@ -1,8 +1,10 @@
 page-profile {}
 
 .influencer-detail img {
-    max-width: 250px;
+    max-width: 50%;
+    max-height: 200px;
     border-radius: 50%;
+    margin-top: 3%;
 }
 
 .profile-picture {
@@ -15,4 +17,55 @@ page-profile {}
     display: -webkit-box;
     -webkit-box-pack: center;
     -webkit-box-align: center;
+}
+.card-md,
+.card-ios
+{
+    background-color:#181818;
+    height: 100%;
+    width:100%;
+    margin:0px;
+}
+.card-md .item-md.item-block .item-inner
+{
+    margin-top:3%;
+
+}
+.card-md h2,
+.item-ios h2
+{
+    color:#f1f1f1;
+    text-align: center;
+    line-height: 25px;
+    font-size: 1.5em;
+}
+.cbox {
+    text-align: center;
+    margin-top: 10%;
+    /* background: #000; */
+    width: 65%;
+    margin: 5%auto;
+}
+.grey{
+    color:grey;
+}
+.kuning
+{
+    color:#FACB1B;
+    font-size: 1.3em;
+}
+
+.card-ios > .item:last-child, .card-ios > .item:last-child .item-inner, .card-ios > .item-wrapper:last-child .item
+,
+.card-md > .item:last-child, .card-md > .item:last-child .item-inner, .card-md > .item-wrapper:last-child .item
+{
+        text-align: center;
+    width: 100%;
+}
+.lbox
+{
+        background: #000;
+    width: 100%;
+    text-align: left;
+    padding: 3%;
 }
