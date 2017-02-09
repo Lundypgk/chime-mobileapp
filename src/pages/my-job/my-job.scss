@@ -39,4 +39,8 @@ ion-item.item.item-block.item-md
     font-size: 1.6em;
     text-align: center;
 }
+.item-md ion-thumbnail ion-img, .item-md ion-thumbnail img,
+.item-ios ion-thumbnail ion-img, .item-ios ion-thumbnail img{
+    border-radius: 50%;
+}
 }
