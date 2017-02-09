@@ -29,7 +29,7 @@
 <ion-content>
     <div [ngSwitch]="pet">
         <ion-list *ngSwitchCase="'puppies'">
-            <ion-item>
+            <ion-item [navPush]="jobDetail">
                 <ion-thumbnail item-left>
                     <img src="./assets/Images/guy.png">
                 </ion-thumbnail>

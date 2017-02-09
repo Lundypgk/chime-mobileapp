@@ -1,3 +1,4 @@
+import { JobDetailPage } from './../pages/job-detail/job-detail';
 import { LoginPage } from './../pages/login/login';
 import { MyJobPage } from './../pages/my-job/my-job';
 import { ChatPage } from './../pages/chat/chat';
@@ -16,6 +17,7 @@ import { TabsPage } from '../pages/tabs/tabs';
     ProfilePage,
     ChatPage,
     MyJobPage,
+    JobDetailPage,
     TabsPage
   ],
   imports: [
@@ -29,6 +31,7 @@ import { TabsPage } from '../pages/tabs/tabs';
     ProfilePage,
     ChatPage,
     MyJobPage,
+    JobDetailPage,
     TabsPage
   ],
   providers: [{provide: ErrorHandler, useClass: IonicErrorHandler}]
