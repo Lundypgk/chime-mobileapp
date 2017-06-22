@@ -1,39 +1,33 @@
-import { JobDetailPage } from './../pages/job-detail/job-detail';
-import { LoginPage } from './../pages/login/login';
-import { MyJobPage } from './../pages/my-job/my-job';
-import { ChatPage } from './../pages/chat/chat';
-import { ProfilePage } from './../pages/profile/profile';
-import { NgModule, ErrorHandler } from '@angular/core';
-import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
-import { MyApp } from './app.component';
-import { HomePage } from '../pages/home/home';
-import { TabsPage } from '../pages/tabs/tabs';
+import { BrowserModule } from '@angular/platform-browser';
+import { ErrorHandler, NgModule } from '@angular/core';
+import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
+import { SplashScreen } from '@ionic-native/splash-screen';
+import { StatusBar } from '@ionic-native/status-bar';
+
+import { ChimeApp } from './app.component';
+import { LoginPage } from '../pages/login/login';
+import { SignupBrandPage } from "../pages/login/signup-brand/signup-brand";
 
 @NgModule({
   declarations: [
-    MyApp,
+    ChimeApp,
     LoginPage,
-    HomePage,
-    ProfilePage,
-    ChatPage,
-    MyJobPage,
-    JobDetailPage,
-    TabsPage
+    SignupBrandPage
   ],
   imports: [
-    IonicModule.forRoot(MyApp)
+    BrowserModule,
+    IonicModule.forRoot(ChimeApp)
   ],
   bootstrap: [IonicApp],
   entryComponents: [
-    MyApp,
+    ChimeApp,
     LoginPage,
-    HomePage,
-    ProfilePage,
-    ChatPage,
-    MyJobPage,
-    JobDetailPage,
-    TabsPage
+    SignupBrandPage
   ],
-  providers: [{provide: ErrorHandler, useClass: IonicErrorHandler}]
+  providers: [
+    StatusBar,
+    SplashScreen,
+    { provide: ErrorHandler, useClass: IonicErrorHandler }
+  ]
 })
-export class AppModule {}
+export class AppModule { }
