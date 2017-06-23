@@ -8,13 +8,19 @@ import { ChimeApp } from './app.component';
 import { LoginPage } from '../pages/login/login';
 import { SignupBrandPage } from "../pages/login/signup-brand/signup-brand";
 import { ChimerHomePage } from "../pages/chimer/home/chimer-home";
+import { TabsPage } from "../pages/chimer/tabs/tabs";
+import { ChimerProfilePage } from "../pages/chimer/profile/chimer-profile";
+import { ChimerJobsPage } from "../pages/chimer/jobs/chimer-jobs";
 
 @NgModule({
   declarations: [
     ChimeApp,
     LoginPage,
     SignupBrandPage,
-    ChimerHomePage
+    TabsPage,
+    ChimerHomePage,
+    ChimerJobsPage,
+    ChimerProfilePage,
   ],
   imports: [
     BrowserModule,
@@ -25,7 +31,10 @@ import { ChimerHomePage } from "../pages/chimer/home/chimer-home";
     ChimeApp,
     LoginPage,
     SignupBrandPage,
-    ChimerHomePage
+    TabsPage,
+    ChimerHomePage,
+    ChimerJobsPage,
+    ChimerProfilePage,
   ],
   providers: [
     StatusBar,
