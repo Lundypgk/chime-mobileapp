@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 import { SignupBrandPage } from "./signup-brand/signup-brand";
+import { ChimerHomePage } from "../chimer/home/chimer-home";
 
 @Component({
   selector: 'page-login',
@@ -18,5 +19,9 @@ export class LoginPage {
 
   signupChimer() {
     this.navCtrl.push(SignupBrandPage);
+  }
+
+  login() {
+    this.navCtrl.setRoot(ChimerHomePage);
   }
 }

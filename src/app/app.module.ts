@@ -7,12 +7,14 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { ChimeApp } from './app.component';
 import { LoginPage } from '../pages/login/login';
 import { SignupBrandPage } from "../pages/login/signup-brand/signup-brand";
+import { ChimerHomePage } from "../pages/chimer/home/chimer-home";
 
 @NgModule({
   declarations: [
     ChimeApp,
     LoginPage,
-    SignupBrandPage
+    SignupBrandPage,
+    ChimerHomePage
   ],
   imports: [
     BrowserModule,
@@ -22,7 +24,8 @@ import { SignupBrandPage } from "../pages/login/signup-brand/signup-brand";
   entryComponents: [
     ChimeApp,
     LoginPage,
-    SignupBrandPage
+    SignupBrandPage,
+    ChimerHomePage
   ],
   providers: [
     StatusBar,
