@@ -1,27 +1,27 @@
 <div padding>
-  <ion-segment [(ngModel)]="pet">
-    <ion-segment-button value="kittens">
-      Kittens
+  <ion-segment [(ngModel)]="status">
+    <ion-segment-button value="InProgress">
+      In Progress
+    </ion-segment-button>
+    <ion-segment-button value="Approval" text-wrap>
+      Pending Approval
     </ion-segment-button>
     <ion-segment-button value="puppies">
-      Puppies
+      Completed
     </ion-segment-button>
   </ion-segment>
 </div>
-
-<div [ngSwitch]="pet">
-  <ion-list *ngSwitchCase="'puppies'">
+<div [ngSwitch]="status">
+  <ion-list *ngSwitchCase="'InProgress'">
     <ion-item>
-      <h2>Ruby</h2>
+      <h2>In Progress</h2>
     </ion-item>
-    ...
   </ion-list>
 
-  <ion-list *ngSwitchCase="'kittens'">
+  <ion-list *ngSwitchCase="'Approval'">
     <ion-item>
 
-      <h2>Luna</h2>
+      <h2>Approval</h2>
     </ion-item>
-    ...
   </ion-list>
 </div>
