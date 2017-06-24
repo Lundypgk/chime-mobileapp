@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { IonicPage, NavController, NavParams, LoadingController } from 'ionic-angular';
+import { LoginPage } from "../../login/login";
 
 /**
  * Generated class for the ChimerProfilePage page.
@@ -14,11 +15,27 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class ChimerProfilePage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public navCtrl: NavController,
+    public navParams: NavParams,
+    public loadingCtrl: LoadingController) {
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad ChimerProfilePage');
+  }
+
+  signOut() {
+    let loading = this.loadingCtrl.create({
+      spinner: 'dots',
+      content: 'Loading'
+    });
+
+    loading.present();
+
+    setTimeout(() => {
+      loading.dismiss();
+      this.navCtrl.setRoot(LoginPage);
+    }, 1500);
   }
 
 }

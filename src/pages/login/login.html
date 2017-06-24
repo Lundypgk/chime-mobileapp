@@ -28,16 +28,18 @@
     <!--User Input-->
 
     <!--Radio Buttons-->
-    <div class="form-group" text-center>
-      <label class="control control--radio">
-                <input type="radio" name="user"  [checked]=true value="chimer"/>Chimer
+    <ion-list>
+      <div class="form-group" text-center>
+        <label class="control control--radio">
+                <input type="radio" name="user" [checked]=true value="chimer" [(ngModel)]="type"/>Chimer
                 <div class="control__indicator"></div>
                 </label>
-      <label class="control control--radio">
-                <input type="radio" name="user" value="brand"/>Brand
+        <label class="control control--radio">
+                <input type="radio" name="user" value="brand" [(ngModel)]="type"/>Brand
                 <div class="control__indicator"></div>
         </label>
-    </div>
+      </div>
+    </ion-list>
     <!--Radio Buttons-->
 
 

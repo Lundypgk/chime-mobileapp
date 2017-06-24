@@ -13,8 +13,10 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
   templateUrl: 'chimer-jobs.html',
 })
 export class ChimerJobsPage {
+  status: string;
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
+    this.status = "InProgress";
   }
 
   ionViewDidLoad() {

@@ -1,27 +1,38 @@
-<div padding>
-  <ion-segment [(ngModel)]="status">
-    <ion-segment-button value="InProgress">
-      In Progress
-    </ion-segment-button>
-    <ion-segment-button value="Approval" text-wrap>
-      Pending Approval
-    </ion-segment-button>
-    <ion-segment-button value="puppies">
-      Completed
-    </ion-segment-button>
-  </ion-segment>
-</div>
-<div [ngSwitch]="status">
-  <ion-list *ngSwitchCase="'InProgress'">
+<ion-header>
+
+  <ion-navbar>
+    <ion-title text-center>Profile</ion-title>
+  </ion-navbar>
+
+</ion-header>
+<ion-content padding>
+  <div padding></div>
+  <ion-list>
     <ion-item>
-      <h2>In Progress</h2>
+      <ion-icon name="person" item-start></ion-icon>
+      First Name
+    </ion-item>
+    <ion-item>
+      <ion-icon name="person" item-start></ion-icon>
+      Last Name
+    </ion-item>
+    <ion-item>
+      <ion-icon name="calendar" item-start></ion-icon>
+      Birthday
+    </ion-item>
+    <ion-item>
+      <ion-icon name="mail" item-start></ion-icon>
+      Email
+    </ion-item>
+    <ion-item>
+      <ion-icon name="card" item-start></ion-icon>
+      Bank
+    </ion-item>
+    <ion-item>
+      <ion-icon name="person" item-start></ion-icon>
+      Followers
     </ion-item>
   </ion-list>
-
-  <ion-list *ngSwitchCase="'Approval'">
-    <ion-item>
-
-      <h2>Approval</h2>
-    </ion-item>
-  </ion-list>
-</div>
+  <button ion-button outline text-center (click)="signOut()">Sign Out</button>
+  <button ion-button outline text-center>Update Profile</button>
+</ion-content>

@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { ListingPage } from "../listing/listing";
 
 /**
  * Generated class for the HomePage page.
@@ -21,4 +22,7 @@ export class ChimerHomePage {
     console.log('ionViewDidLoad HomePage');
   }
 
+  onView() {
+    this.navCtrl.push(ListingPage);
+  }
 }

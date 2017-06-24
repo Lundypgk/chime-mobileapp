@@ -11,6 +11,7 @@ import { ChimerHomePage } from "../pages/chimer/home/chimer-home";
 import { TabsPage } from "../pages/chimer/tabs/tabs";
 import { ChimerProfilePage } from "../pages/chimer/profile/chimer-profile";
 import { ChimerJobsPage } from "../pages/chimer/jobs/chimer-jobs";
+import { ListingPage } from "../pages/chimer/listing/listing";
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { ChimerJobsPage } from "../pages/chimer/jobs/chimer-jobs";
     ChimerHomePage,
     ChimerJobsPage,
     ChimerProfilePage,
+    ListingPage
   ],
   imports: [
     BrowserModule,
@@ -35,6 +37,7 @@ import { ChimerJobsPage } from "../pages/chimer/jobs/chimer-jobs";
     ChimerHomePage,
     ChimerJobsPage,
     ChimerProfilePage,
+    ListingPage
   ],
   providers: [
     StatusBar,
