@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
 import { NavController, LoadingController } from 'ionic-angular';
 import { SignupBrandPage } from "./signup-brand/signup-brand";
+import { SignupChimerPage } from "./signup-chimer/signup-chimer";
 import { ChimerHomePage } from "../chimer/chimer-home/chimer-home";
 import { ChimerTabsPage } from "../chimer/chimer-tabs/chimer-tabs";
-import { SignupChimerPage } from "./signup-chimer/signup-chimer";
+import { BrandTabsPage } from "../brand/brand-tabs/brand-tabs";
 
 @Component({
   selector: 'page-login',
@@ -39,7 +40,7 @@ export class LoginPage {
         this.navCtrl.setRoot(ChimerTabsPage);
       }
       else {
-
+        this.navCtrl.setRoot(BrandTabsPage);
       }
     }, 1500);
   }

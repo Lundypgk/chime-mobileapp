@@ -13,6 +13,8 @@ import { ChimerProfilePage } from "../pages/chimer/chimer-profile/chimer-profile
 import { ChimerJobsPage } from "../pages/chimer/chimer-jobs/chimer-jobs";
 import { ChimerListingPage } from "../pages/chimer/chimer-listing/chimer-listing";
 import { SignupChimerPage } from "../pages/login/signup-chimer/signup-chimer";
+import { BrandTabsPage } from "../pages/brand/brand-tabs/brand-tabs";
+import { BrandHomePage } from "../pages/brand/brand-home/brand-home";
 
 @NgModule({
   declarations: [
@@ -24,7 +26,9 @@ import { SignupChimerPage } from "../pages/login/signup-chimer/signup-chimer";
     ChimerHomePage,
     ChimerJobsPage,
     ChimerProfilePage,
-    ChimerListingPage
+    ChimerListingPage,
+    BrandTabsPage,
+    BrandHomePage
   ],
   imports: [
     BrowserModule,
@@ -40,7 +44,9 @@ import { SignupChimerPage } from "../pages/login/signup-chimer/signup-chimer";
     ChimerHomePage,
     ChimerJobsPage,
     ChimerProfilePage,
-    ChimerListingPage
+    ChimerListingPage,
+    BrandTabsPage,
+    BrandHomePage
   ],
   providers: [
     StatusBar,

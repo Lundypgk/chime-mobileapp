@@ -37,8 +37,8 @@
       </ion-list>
 
       <ion-item>
-        <ion-label floating>Date of Birth</ion-label>
-        <ion-input type="text"></ion-input>
+        <ion-label>Date of Birth</ion-label>
+        <ion-datetime displayFormat="MMM DD YYYY" [(ngModel)]="event.dateStarts"></ion-datetime>
       </ion-item>
 
       <ion-item>
@@ -63,6 +63,6 @@
     </div>
   </ion-list>
   <div text-center>
-    <button ion-button class="login-button">Sign Up</button>
+    <button ion-button class="login-button" (click)="signUp()">Sign Up</button>
   </div>
 </ion-content>

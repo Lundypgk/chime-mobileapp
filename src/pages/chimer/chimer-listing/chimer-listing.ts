@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { IonicPage, NavController, NavParams, LoadingController, ToastController } from 'ionic-angular';
 
 /**
  * Generated class for the ListingPage page.
@@ -16,16 +16,37 @@ export class ChimerListingPage {
 
   tabBarElement: any;
 
-  constructor(public navCtrl: NavController) {
+  constructor(public navCtrl: NavController,
+    public loadingCtrl: LoadingController,
+    public toastCtrl: ToastController) {
     this.tabBarElement = document.querySelector('.tabbar.show-tabbar');
   }
 
   ionViewWillEnter() {
     this.tabBarElement.style.display = 'none';
   }
- 
+
   ionViewWillLeave() {
     this.tabBarElement.style.display = 'flex';
   }
 
+  applyListing() {
+    let loading = this.loadingCtrl.create({
+      spinner: 'dots',
+      content: 'Loading'
+    });
+
+    loading.present();
+
+    setTimeout(() => {
+      loading.dismiss();
+      let toast = this.toastCtrl.create({
+        message: 'Applied Listing',
+        duration: 1500,
+      });
+      toast.present();
+      this.navCtrl.remove(2, 1); // This will remove the 'Listing Page' from stack.
+      this.navCtrl.pop();
+    }, 1500);
+  }
 }

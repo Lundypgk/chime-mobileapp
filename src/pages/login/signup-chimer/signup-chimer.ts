@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { IonicPage, NavController, NavParams, LoadingController, ToastController } from 'ionic-angular';
 
 /**
  * Generated class for the SignupChimerPage page.
@@ -14,11 +14,38 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class SignupChimerPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  public event = {
+    dateStarts: '1990-02-20'
+  }
+
+  constructor(public navCtrl: NavController,
+    public navParams: NavParams,
+    public loadingCtrl: LoadingController,
+    public toastCtrl: ToastController) {
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad SignupChimerPage');
+  }
+
+  signUp() {
+    let loading = this.loadingCtrl.create({
+      spinner: 'dots',
+      content: 'Loading'
+    });
+
+    loading.present();
+
+    setTimeout(() => {
+      loading.dismiss();
+      let toast = this.toastCtrl.create({
+        message: 'Successfully Registered',
+        duration: 1500,
+      });
+      toast.present();
+      this.navCtrl.remove(2, 1); // This will remove the 'Sign Up Page' from stack.
+      this.navCtrl.pop();
+    }, 1500);
   }
 
 }

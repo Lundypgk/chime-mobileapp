@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams, LoadingController } from 'ionic-angular';
+import { IonicPage, NavController, NavParams, LoadingController, ToastController, App } from 'ionic-angular';
 import { LoginPage } from "../../login/login";
 
 /**
@@ -15,9 +15,11 @@ import { LoginPage } from "../../login/login";
 })
 export class ChimerProfilePage {
 
-  constructor(public navCtrl: NavController,
+  constructor(private app: App,
+    public navCtrl: NavController,
     public navParams: NavParams,
-    public loadingCtrl: LoadingController) {
+    public loadingCtrl: LoadingController,
+    public toastCtrl: ToastController) {
   }
 
   ionViewDidLoad() {
@@ -34,8 +36,31 @@ export class ChimerProfilePage {
 
     setTimeout(() => {
       loading.dismiss();
-      this.navCtrl.setRoot(LoginPage);
+      let toast = this.toastCtrl.create({
+        message: 'You have logged Out !',
+        duration: 1500,
+      });
+      toast.present();
+      this.app.getRootNav().setRoot(LoginPage);
+      // this.navCtrl.setRoot(LoginPage);
     }, 1500);
   }
 
+  updateProfile() {
+    let loading = this.loadingCtrl.create({
+      spinner: 'dots',
+      content: 'Loading'
+    });
+
+    loading.present();
+
+    setTimeout(() => {
+      loading.dismiss();
+      let toast = this.toastCtrl.create({
+        message: 'Updated Profile',
+        duration: 1500,
+      });
+      toast.present();
+    }, 1500);
+  }
 }
