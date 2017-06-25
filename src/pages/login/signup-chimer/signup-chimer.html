@@ -1,0 +1,68 @@
+<!--
+  Generated template for the SignupBrandPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Sign Up</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <ion-list>
+    <div class="user-input">
+      <ion-item>
+        <ion-label floating>First Name</ion-label>
+        <ion-input type="text"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label floating>Last Name</ion-label>
+        <ion-input type="text"></ion-input>
+      </ion-item>
+
+      <ion-list>
+        <ion-item>
+          <ion-label>Select Gender</ion-label>
+          <ion-select [(ngModel)]="Gender">
+            <ion-option value="Male">Male</ion-option>
+            <ion-option value="Female">Female</ion-option>
+          </ion-select>
+        </ion-item>
+      </ion-list>
+
+      <ion-item>
+        <ion-label floating>Date of Birth</ion-label>
+        <ion-input type="text"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label floating>Mobile Number</ion-label>
+        <ion-input type="text"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label floating>Email Address</ion-label>
+        <ion-input type="text"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label floating>Password</ion-label>
+        <ion-input type="password"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label floating>Confirm Password</ion-label>
+        <ion-input type="password"></ion-input>
+      </ion-item>
+    </div>
+  </ion-list>
+  <div text-center>
+    <button ion-button class="login-button">Sign Up</button>
+  </div>
+</ion-content>

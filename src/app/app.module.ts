@@ -7,22 +7,24 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { ChimeApp } from './app.component';
 import { LoginPage } from '../pages/login/login';
 import { SignupBrandPage } from "../pages/login/signup-brand/signup-brand";
-import { ChimerHomePage } from "../pages/chimer/home/chimer-home";
-import { TabsPage } from "../pages/chimer/tabs/tabs";
-import { ChimerProfilePage } from "../pages/chimer/profile/chimer-profile";
-import { ChimerJobsPage } from "../pages/chimer/jobs/chimer-jobs";
-import { ListingPage } from "../pages/chimer/listing/listing";
+import { ChimerHomePage } from "../pages/chimer/chimer-home/chimer-home";
+import { ChimerTabsPage } from "../pages/chimer/chimer-tabs/chimer-tabs";
+import { ChimerProfilePage } from "../pages/chimer/chimer-profile/chimer-profile";
+import { ChimerJobsPage } from "../pages/chimer/chimer-jobs/chimer-jobs";
+import { ChimerListingPage } from "../pages/chimer/chimer-listing/chimer-listing";
+import { SignupChimerPage } from "../pages/login/signup-chimer/signup-chimer";
 
 @NgModule({
   declarations: [
     ChimeApp,
     LoginPage,
     SignupBrandPage,
-    TabsPage,
+    SignupChimerPage,
+    ChimerTabsPage,
     ChimerHomePage,
     ChimerJobsPage,
     ChimerProfilePage,
-    ListingPage
+    ChimerListingPage
   ],
   imports: [
     BrowserModule,
@@ -33,11 +35,12 @@ import { ListingPage } from "../pages/chimer/listing/listing";
     ChimeApp,
     LoginPage,
     SignupBrandPage,
-    TabsPage,
+    SignupChimerPage,
+    ChimerTabsPage,
     ChimerHomePage,
     ChimerJobsPage,
     ChimerProfilePage,
-    ListingPage
+    ChimerListingPage
   ],
   providers: [
     StatusBar,

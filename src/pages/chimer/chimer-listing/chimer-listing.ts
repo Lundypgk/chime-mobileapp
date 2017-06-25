@@ -9,10 +9,10 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
  */
 @IonicPage()
 @Component({
-  selector: 'page-listing',
-  templateUrl: 'listing.html',
+  selector: 'page-chimer-listing',
+  templateUrl: 'chimer-listing.html',
 })
-export class ListingPage {
+export class ChimerListingPage {
 
   tabBarElement: any;
 

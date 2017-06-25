@@ -1,16 +1,16 @@
 import { NgModule } from '@angular/core';
 import { IonicPageModule } from 'ionic-angular';
-import { ListingPage } from './listing';
+import { ChimerListingPage } from './chimer-listing';
 
 @NgModule({
   declarations: [
-    ListingPage,
+    ChimerListingPage,
   ],
   imports: [
-    IonicPageModule.forChild(ListingPage),
+    IonicPageModule.forChild(ChimerListingPage),
   ],
   exports: [
-    ListingPage
+    ChimerListingPage
   ]
 })
 export class ListingPageModule {}

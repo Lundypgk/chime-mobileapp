@@ -1,28 +1,24 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import { ListingPage } from "../listing/listing";
 
 /**
- * Generated class for the HomePage page.
+ * Generated class for the SignupChimerPage page.
  *
  * See http://ionicframework.com/docs/components/#navigation for more info
  * on Ionic pages and navigation.
  */
 @IonicPage()
 @Component({
-  selector: 'page-chimer-home',
-  templateUrl: 'chimer-home.html',
+  selector: 'page-signup-chimer',
+  templateUrl: 'signup-chimer.html',
 })
-export class ChimerHomePage {
+export class SignupChimerPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad HomePage');
+    console.log('ionViewDidLoad SignupChimerPage');
   }
 
-  onView() {
-    this.navCtrl.push(ListingPage);
-  }
 }

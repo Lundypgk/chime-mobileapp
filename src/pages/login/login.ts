@@ -1,8 +1,9 @@
 import { Component } from '@angular/core';
 import { NavController, LoadingController } from 'ionic-angular';
 import { SignupBrandPage } from "./signup-brand/signup-brand";
-import { ChimerHomePage } from "../chimer/home/chimer-home";
-import { TabsPage } from "../chimer/tabs/tabs";
+import { ChimerHomePage } from "../chimer/chimer-home/chimer-home";
+import { ChimerTabsPage } from "../chimer/chimer-tabs/chimer-tabs";
+import { SignupChimerPage } from "./signup-chimer/signup-chimer";
 
 @Component({
   selector: 'page-login',
@@ -21,7 +22,7 @@ export class LoginPage {
   }
 
   signupChimer() {
-    this.navCtrl.push(SignupBrandPage);
+    this.navCtrl.push(SignupChimerPage);
   }
 
   login() {
@@ -34,9 +35,8 @@ export class LoginPage {
 
     setTimeout(() => {
       loading.dismiss();
-      console.log(this.type);
       if (this.type == "chimer") {
-        this.navCtrl.setRoot(TabsPage);
+        this.navCtrl.setRoot(ChimerTabsPage);
       }
       else {
 
